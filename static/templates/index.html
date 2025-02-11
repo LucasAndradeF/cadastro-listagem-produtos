@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Produto</title>
+  </head>
+  <body>
+    <form id="form-cadastro">
+      <label for="nome-produto">Nome do produto</label>
+      <input type="text" id="nome-produto" required />
+      
+      <label for="descricao-produto">Descrição do produto</label>
+      <input type="text" id="descricao-produto" required />
+      
+      <label for="valor-produto">Valor do produto</label>
+      <input type="number" id="valor-produto" required />
+
+      <label for="disponibilidade-venda">Disponível para venda:</label>
+      <label><input type="radio" name="disponibilidade-venda" value="true" required /> Sim</label>
+      <label><input type="radio" name="disponibilidade-venda" value="false" required /> Não</label>
+      
+      <button onclick="cadastrarProduto()">Cadastrar Produto</button>
+    </form>
+    
+    <a href="listagem.html">Listagem de Produtos</a>
+    
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listagem de Produtos</title>
+  </head>
+  <body>
+    <div>
+      <a href="index.html">Cadastrar Novo Produto</a>
+      
+      <select name="ordenar" id="ordenar">
+        <option value="">Ordenar por</option>
+        <option value="maior">Maior Preço</option>
+        <option value="menor">Menor Preço</option>
+      </select>
+    </div>
+    <button onclick="ordenarProdutos()">Ordenar por preço</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-produtos">
+      </tbody>
+    </table>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
