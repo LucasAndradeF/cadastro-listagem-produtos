@@ -11,6 +11,7 @@ db = SQLAlchemy(app)
 
 CORS(app)
 
+
 class Produto(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nomeProduto = db.Column(db.String(100), nullable=False)
