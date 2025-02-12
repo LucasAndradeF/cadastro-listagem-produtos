@@ -1,0 +1,19 @@
+#valor-produto::-webkit-outer-spin-button,
+#valor-produto::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#valor-produto[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#descricao-produto {
+  resize: none;
+  height: 8em;
+}
+
+html,
+body {
+  background-color: #f8f8f8;
+}
